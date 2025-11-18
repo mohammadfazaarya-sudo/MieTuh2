@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MieTuh</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Mie<span>Tuh</span></div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" onclick="closeMenu()">Beranda</a>
+        <a href="#about" onclick="closeMenu()">Tentang</a>
+        <a href="#menu" onclick="closeMenu()">Menu</a>
+        <a href="#contact" onclick="closeMenu()">Kontak</a>
+      </nav>
+      <div class="menu-icon" id="menuBtn">☰</div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Mie Beragam, Rasa Tak Pernah Sama</h1>
+      <p>Memberikan pengalaman kuliner yang menyenangkan dan berkesan di MieTuh.</p>
+      <a href="#menu" class="btn">Pesan Sekarang</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-text">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah penyedia berbagai macam mie dengan cita rasa autentik dan kualitas terbaik. Dari mie tradisional hingga kreasi modern, kami menghadirkan pilihan yang beragam untuk memenuhi selera setiap pelanggan.</p>
+      </div>
+      <div class="about-img">
+        <img src="img/tmi.jpg" alt="Tentang Kami">
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu">
+    <h2>Menu Favorit</h2>
+    <div class="menu-container">
+      <div class="menu-card">
+        <img src="img/bak.jpg" alt="Bakmi">
+        <h3>Bakmi</h3>
+        <p>Rp 20.000</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/rebus.jpg" alt="Mie Rebus">
+        <h3>Mie Rebus</h3>
+        <p>Rp 19.000</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/bang.jpg" alt="Mie Bangladesh">
+        <h3>Mie Bangladesh</h3>
+        <p>Rp 22.000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Embed Google Maps (iframe) -->
+<section id="map-embed" style="padding: 0;">
+  <div class="map-wrapper">
+    <iframe
+      src="https://www.google.com/maps?q=-6.200000,106.816666&z=15&output=embed"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Hubungi Kami</h2>
+      <form action="#">
+        <input type="text" placeholder="Nama" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Pesan Anda..." required></textarea>
+        <button type="submit" class="btn">Kirim</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Mie Tuh| Semua Hak Dilindungi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
